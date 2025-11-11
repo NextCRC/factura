@@ -1,0 +1,72 @@
+/* Estilos personalizados para la fuente Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7fafc; /* gris claro */
+}
+/* Estilo para el link activo de la barra lateral */
+.nav-link.active {
+    background-color: #4a5568; /* gris más oscuro */
+    color: white;
+    font-weight: 600;
+}
+/* Estilos para el scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+}
+
+/* --- ESTILOS SIMPLIFICADOS (SIN COLAPSO) --- */
+.nav-text {
+    white-space: nowrap; 
+    margin-left: 0.75rem; /* ml-3 */
+}
+
+/* Asegurar que el header de la tabla sea pegajoso */
+.sticky-header thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f9fafb;
+    z-index: 10;
+}
+
+/* Estilos para los tiles de categoría de productos */
+.category-tile {
+    background-color: #E5E7EB; /* bg-gray-200 */
+    padding: 1rem; /* p-4 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-md */
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    cursor: pointer;
+    border-width: 2px;
+    border-color: transparent;
+}
+
+.category-tile:hover {
+    background-color: #D1D5DB; /* hover:bg-gray-300 */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* hover:shadow-lg */
+}
+
+.category-tile.active {
+    background-color: #3B82F6; /* bg-blue-500 */
+    color: white; /* text-white */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* shadow-lg */
+}
+
+/* Cuando el tile está activo, el texto del h3 debe ser blanco */
+.category-tile.active h3 {
+    color: white;
+}
