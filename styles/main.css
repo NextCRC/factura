@@ -70,3 +70,10 @@ body {
 .category-tile.active h3 {
     color: white;
 }
+
+/* Estilo para el tile de documento activo */
+.documento-tile.active-tile {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3), 0 4px 6px -2px rgba(59, 130, 246, 0.2);
+    border-color: #3B82F6; /* Borde azul */
+}
